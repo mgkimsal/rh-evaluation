@@ -8,7 +8,7 @@ freewriting section: compatibility, backwards compatibility,
 memory: what if they have a lot of tabs open, what if it's a blackberry or a kindle or a Smart TV or a playstation
 rendering: viewport size, never assuming that a desktop isn't a touch device, that a handheld device doesn't have a keyboard (or any other HID) attached.
 Privacy: are they concerned about cookies? are they using a private/incognito window? How much usefulness can we deliver without the user feeling like they have to give anything away?
-Delight: Make it pretty. 
+Delight: Make it pretty. Would a face help? Would motion or animation in any interactions make intent more clear? Is there some common on-board sensor (like a GPS) that would make the tasks less repetitive and more interactive?
 Empty space: check any container or list for clarity while very full or completely empty. check the containers in proximity to each other or even nested within one another. Is it still clear?
 
 ## Q2 What techniques do you employ to keep up-to-date with the rapid pace of progress in the field [of] front-end development? How do you choose which technologies are worth taking the time to learn more about?
@@ -41,8 +41,6 @@ I'm proud of the fact that I've been able to connect with so many real people. W
 
 
 
-
- 
 
 ####
 100 people team in boston and raleigh
