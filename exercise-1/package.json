@@ -1,0 +1,11 @@
+{
+  "name": "00-eval",
+  "version": "1.0.0",
+  "description": "RedHat Evaluation ",
+  "main": "exercise1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wray Bowling",
+  "license": "ISC"
+}
