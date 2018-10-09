@@ -4,8 +4,11 @@
   "description": "RedHat Evaluation ",
   "main": "exercise1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Wray Bowling",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
 }
