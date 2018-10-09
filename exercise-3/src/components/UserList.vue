@@ -23,7 +23,7 @@ export default {
   computed: {
     users() {
       return this.$store.state.users.sort( function nameDescending(a,b) {
-        return b.name - a.name;
+        return a.name < b.name;
       });
     }
   }
