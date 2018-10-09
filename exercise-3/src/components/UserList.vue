@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <h1>Yo, Users.</h1>
-    <UserMini v-for="user in users" :key="user.id" :userData="user" />
+    <table>
+    <tr v-for="user in users" :key="user.id" :userData="user" >
+      <td><router-link :to="{name: 'user', params: {id: user.id}}">{{user.name}}</router-link></td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.address.street}} {{user.address.suite}} {{user.address.city}} {{user.address.zipcode}}</td>
+    </tr>
+    </table>
   </div>
 </template>
 
 <script>
 import UserMini from "./UserMini";
-//import { fetchJSON } from "../fetchJSON";
 
 export default {
   name: "App",
-  // data: () => ({
-  //   users: [{ id: 0, name: "error" }]
-  // }),
   components: {
     UserMini
   },
@@ -24,27 +27,11 @@ export default {
       });
     }
   }
-  // mounted() {
-  //   this.updateUsers();
-  //   console.log(this.users);
-  // },
-  // methods: {
-  //   async updateUsers() {
-  //     this.users = await fetchJSON(
-  //       "https://jsonplaceholder.typicode.com/users"
-  //     );
-  //   }
-  // }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+td {
+  text-align:left;
 }
 </style>
